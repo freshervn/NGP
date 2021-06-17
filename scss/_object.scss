@@ -1,0 +1,60 @@
+.Progress{
+  width: 100%;
+  background-color: rgba(2, 74, 143,.2);
+  height: 10px;
+  .Bar{
+    width: 0%;
+    height: 100%;
+    background-color: var(--theme);       
+  }
+}
+@keyframes progressRunning{
+  from{
+      width: 0%;
+  }
+  to{
+      width: 100%;
+  }
+}
+.mucLucPart{
+  .text1{
+    color: red;
+  }
+}
+.tac-gia{
+  .blogQuote {
+    padding: 2em;
+    position: relative;
+    width:100%;
+    @media (min-width:768px) {      
+      width: calc(100% - 100px);
+    }
+    &::before {
+      content: '';
+      background: url(../images/quote.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2em;
+      height: 2em;
+      transform: rotate(180deg);
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      background: url(../images/quote.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 2em;
+      height: 2em;
+      z-index: 1;
+    }
+  }
+}

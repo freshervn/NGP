@@ -1,0 +1,228 @@
+// size
+.h100{
+    height: 100% !important;
+}
+.h1rem{
+    height: 1rem!important;
+}
+.h15rem{
+    height: 1.5rem!important;
+}
+.h2rem{
+    height: 2rem!important;
+}
+.h4rem{
+    height: 4rem!important;
+}
+.h8rem{
+    height: 8rem!important;
+}
+.h10rem{
+    height: 10rem!important;
+}
+.h8-4rem{
+    height: 4rem!important;
+    @media (min-width:768px) {        
+        height: 8rem!important;
+    }
+}
+.h4line{
+    height: calc(4 * 1.6em);
+}
+.h3rem{
+    height: 2rem !important;
+}
+.h12rem{
+    height: 12rem!important;
+}
+.square-94 {
+    width: 94px;
+    height: 94px;
+}
+.icon-2{
+    height: 2rem;
+    width: 2rem;
+}
+.w-fit{
+    width: fit-content;
+}
+.w-120{
+    width: 120px;
+}
+.fit-object-contain{
+    object-fit: contain !important;
+}
+.icon-3-2{
+    height: 2rem;
+    width: 2rem;
+    @media (min-width:768px) {        
+        height: 3rem;
+        width: 3rem;
+    }
+}
+.max-100{
+    max-width: 100%;
+    max-height: 100%;
+}
+.maxW-768{
+    max-width: 768px;
+}
+// btn
+
+.lg-share:after {
+    content: "\e80d";
+}
+// display
+.no-decoration{
+    text-decoration: none !important;
+    &:hover{        
+        text-decoration: none !important;
+    }
+}
+.flex-auto{
+    flex:auto !important;
+}
+.d-mobie{
+    @media (min-width:768px) {
+        display: none !important;
+    }
+}
+.d-desktop{
+    display: none !important;
+    @media (min-width:768px) {
+        display: inherit !important;
+    }
+}
+.square{
+    position: relative;
+    padding-top: 100%;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+.square-p{
+    position: relative;
+    padding-top: 100%;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        object-fit: contain;
+        width: 90%;
+        height: 90%;
+    }
+}
+.rectangle{
+    position: relative;
+    padding-top: 61.18%;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+    }
+}
+.rectangle-p{
+    position: relative;
+    padding-top: 61.18%;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        object-fit: contain;
+        width: 90%;
+        height: 90%;
+    }
+}
+.fig-full{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    img{
+        min-width: 100%;
+        min-height: 100%;
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);        
+    }
+}
+.mh-150{
+    min-height: 150px !important;
+}
+// .vh80{
+//     height: 80vh;
+//     overflow-y:scroll;
+// }
+.circle{
+    display: inline-block;
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    img,.img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: 150%;
+        max-height: 150%;
+        transform: translate(-50%,-50%);
+    }
+}
+.circle-hv{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    .container{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        transition: 0.3s ease-in-out;
+        position: relative;        
+        overflow: hidden;
+        border-radius: 50%;
+        border: none;
+        img,.img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            max-width: 70%;
+            max-height: 70%;
+            transform: translate(-50%,-50%);
+        }
+    }  
+    &:hover{
+        .container{
+            transform: scale(1.12);
+        }
+    }
+    @media (min-width:768px) {
+        .container{
+            width: 180px;
+            height: 180px;
+        }
+    }
+}

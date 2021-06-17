@@ -1,0 +1,54 @@
+#btn-scroll{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: var(--navIndex);
+    border: none;
+    background: transparent;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
+}
+@keyframes shakephone{
+    from{
+        transform: rotate(-25deg);
+    }
+    to{
+        transform: rotate(-35deg);        
+    }
+}
+.button-contact{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: var(--navIndex);
+    display: flex;
+    #phonering{
+        background: var(--theme);
+        display: block;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        &::after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: dropwater 1.2s 0.5s infinite;
+            content: "";
+            left: 0%;
+            top: 0%;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px var(--theme);
+        }        
+        img{
+            transform: rotate(-25deg);
+            animation: shakephone 0.3s ease-in  alternate-reverse infinite;
+        }
+        &:hover{
+            img{
+                animation: none;       
+            }
+        }
+    }
+}

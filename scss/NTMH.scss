@@ -1,0 +1,65 @@
+/* thiết lập chung */
+
+/*setup*/
+
+:root {
+    --theme:black;
+    --theme2:#4b73b8;
+    --theme-dark-mood:white;
+    --secondary:#394091;
+    --ultimate-gray: #939597;
+    --dark-charcoal: #333;
+    --color-alice: #f8f9fa;
+    --navIndex:100;
+    --popBox:101;
+}
+$lightPink: rgb(249, 235, 214);
+$theme-color-2: --theme-color-1;
+$theme-color-1-5: --theme-color-1-5;
+$theme-color-1: rgb(224, 165, 45);
+$font-color: #333333;
+$font-color-2: #555555;
+$font-color-3: #7f7f7f;
+$font-style: "Open Sans", sans-serif;
+$font-style-2: "Open Sans", sans-serif;
+$ultimate-gray: #939597;
+$dark-charcoal: #333;
+$color-alice: #f8f9fa;
+@import 'color';
+@import 'text';
+@import 'shape';
+@import 'animation';
+@import 'position';
+@import 'nav';
+@import 'popBox';
+@import 'form';
+@import 'owl';
+@import 'banner';
+@import 'product';
+@import 'section-bao-gia';
+@import 'list';
+@import 'footer';
+@import 'fixed';
+@import 'object';
+@import 'btn';
+@import 'icon';
+@import 'bootrap';
+@font-face{
+    src: url('../Lobster/Lobster-Regular.ttf');
+    font-family: "Lobster";
+}
+@font-face{
+    src: url('../Signika/Signika-VariableFont_wght.ttf');
+    font-family: "Signika";
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    *{
+        font-family: "Open Sans" ;
+    }  
+    *::first-letter {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,29 @@
+.banner{
+    .banner-img{
+        height: auto;
+        @media (min-width:768px) {            
+            height: calc(100vh - 200px);
+            overflow-y: hidden;
+            img{
+                position: absolute ;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}
+.banner-2{
+    background-image: url('../images/background3.jpg');
+    background-size: auto 100%;
+    .content{
+        color: white;
+        background: linear-gradient(rgba(2, 74, 143,.8),rgba(2, 74, 143,.8));
+    }
+    @media (min-width:768px) {        
+        .content{
+            padding-left: 180px;
+            clip-path: polygon(150px 0% ,100% 0%, 100% 100%, 0% 100%);
+        }
+    }
+}

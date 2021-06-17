@@ -1,0 +1,599 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Điện mặt trời NGP</title>
+  
+    <!-- title icon -->
+    <link rel="icon" href="images/logoNGP.jpg" type="image/x-icon?">
+  
+    <!-- fontawesome 4 icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+    <!-- bootrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  
+    <!-- j query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <!-- my js -->
+  
+    <!-- my css -->
+    <link rel="stylesheet" href="scss/NTMH.css">
+  
+</head>
+<body>
+    <!-- sticker --> 
+  <span id="topPages"></span>  
+  <a href="#topPages">
+    <button id="btn-scroll" >
+      <img src="images/back-to-top.png" alt="" class="hv-shadow-circle" >
+    </button>
+  </a> 
+  <dl class="button-contact mb-0">
+    <dt class="mr-2 d-flex">
+      <a href="http://" target="_blank" class="my-auto d-block hv-shadow-circle">
+        <img src="images/messenger.png" alt="" class="icon-3-2">
+      </a>
+    </dt>
+    <dt class="mr-2 d-flex">
+      <a href="http://" target="_blank" class="my-auto d-block hv-shadow-circle">
+        <img src="images/zalo.png" alt="" class="icon-3-2">
+      </a>
+    </dt>    
+    <dt class="mr-2 ml-3 d-flex">
+      <a href="tel:+" id='phoneRing' class="my-auto d-block">
+        <img src="images/phoneRing.svg" alt="" class="icon-3-2">
+      </a>    
+    </dt>
+  </dl>
+  <!-- sticker end -->
+  <!-- navbar --> 
+  <nav class="navbar">
+    <header class="d-flex flex-wrap justify-content-between py-2 container-fluid border-bottom container">
+      <div class="d-flex justify-content-between flex-auto ">
+        <a href="index.html">
+          <img src='./images/logoNGP.jpg' alt='Logo' class='logo' title="trang chủ" loading='lazy' />
+        </a>
+        <button class='bg-theme rounded text-white navbar-btn my-auto' click-display-element='link-pages'> 
+          MENU
+          <span class="slicknav_icon ml-2">
+            <span class="slicknav_icon-bar"></span>
+            <span class="slicknav_icon-bar"></span>
+            <span class="slicknav_icon-bar"></span>
+          </span>
+        </button>
+        <form action="" class="my-auto">
+          <input type="text" placeholder="Nhập từ khóa...">
+          <a href="project-detail.html">
+            <i class="fa fa-search m-auto"></i>
+          </a>
+        </form>
+      </div>
+      <div class="links">
+        <dl class="gallery">
+          <dd>
+            <a href="gallery.html" title="Mẫu chung cư">
+              <figure>
+                <img src="./images/icon-chung-chu-nha-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Chung cư đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+            <a href="gallery.html" title="Mẫu nhà">
+              <figure>
+                <img src="./images/icon-nha-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Mẫu nhà đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+            <a href="sub_cate.html" title="Mẫu phòng ngủ">
+              <figure>
+                <img src="./images//icon-phong-ngu.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Phòng ngủ đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+           <a href="sub_cate.html" title="Tủ bếp dẹp">
+              <figure>
+                <img src="./images/icon-phong-bep-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Tủ bếp đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>                    
+          <dd>
+              <a href="gallery.html" title="Văn phòng đẹp">
+              <figure>
+                <img src="./images/icon-vanphong-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Văn phòng đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>                    
+        </dl>
+        <dl class="dang-ky">
+          <dd>
+            <button href="" class="dang-ky-btn hv-bg-theme" click-display-element='pop-box-dangkyTV'>
+              <p>
+                  Đăng ký tư vấn
+              </p>
+            </button>
+          </dd>
+          <dd>
+            <button href="" class="dang-ky-btn hv-bg-theme" click-display-element='pop-box-dangkyBG'>
+              <p>
+                  Đăng ký báo giá
+              </p>
+            </button>
+          </dd>
+        </dl>
+      </div>
+    </header>
+    <main class="container py-0 py-md-2">
+      <dl class='link-pages links pt-1 d-none'>
+        <dd class='link d-flex flex-wrap active'>
+          <a href="index.html" title="Trang chủ" class=' mr-2 cate'>
+            <b>
+              Trang chủ
+            </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery -thiet-ke+thi-cong.html" title="Thiết kế nội thất" class=' mr-2 cate'>
+            <b>
+              Thiết kế nội thất
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-noithat'>►</span>
+          <dl class="subCate subCate-noithat d-none ">
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thiết kế nội thất chung cư" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất nhà phố" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất nhà phố
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất biệt thự" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất biệt thự
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất văn phòng" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất văn phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng khách" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng khách
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng ngủ" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng ngủ
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng bếp" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng bếp
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng trẻ em
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Bệnh Viện
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Trường Học
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Nhà Hàng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Khách sạn
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Văn Phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  (Mở thêm danh mục)
+                </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery -thiet-ke+thi-cong.html" title="Thi công nội thất" class=' mr-2 cate'>
+            <b>
+              Thi công nội thất
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-thicong'>►</span>
+          <dl class="subCate subCate-thicong d-none mb-2">
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất chung cư" class='2 mr-2'>
+                <b>
+                    Thi công nội thất chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất nhà phố" class='2 mr-2'>
+                <b>
+                  Thi công nội thất nhà phố
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất biệt thự" class='2 mr-2'>
+                <b>
+                  Thi công nội thất biệt thự
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất văn phòng" class='2 mr-2'>
+                <b>
+                  Thi công nội thất văn phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng khách" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng khách
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng ngủ" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng ngủ
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng bếp" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng bếp
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng trẻ em
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Bệnh Viện
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Trường Học
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Nhà Hàng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Khách sạn
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Văn Phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  (Mở tiếp nếu cần)
+                </b>
+              </a>
+            </dd>            
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery.html" title="Dự án tiêu biểu" class=' mr-2 cate'>
+            <b>
+              Dự án tiêu biểu
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-duan'>►</span>
+          <dl class="subCate subCate-duan d-none mb-2">
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án chung cư" class='2 mr-2'>
+                <b>
+                  Dự án chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title=" Dự án biệt thự" class='2 mr-2'>
+                <b>
+                                Dự án biệt thự
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title=" Dự án nhà phố" class='2 mr-2'>
+                <b>
+                                Dự án nhà phố
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án văn phòng" class='2 mr-2'>
+                <b>
+                                Dự án văn phòng
+                            </b>
+              </a>
+            </dd>
+
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng trẻ em" class='2 mr-2'>
+                <b>
+                                Dự án phòng trẻ em
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng khách" class='2 mr-2'>
+                <b>
+                                Dự án phòng khách
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng ngủ" class='2 mr-2'>
+                <b>
+                                Dự án phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án tỉnh" class='2 mr-2'>
+                <b>
+                                Dự án tỉnh
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án VINHOMES GRAND PARK" class='2 mr-2'>
+                <b>
+                                Dự án VINHOMES GRAND PARK
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án CELADON EMERALD" class='2 mr-2'>
+                <b>
+                                Dự án CELADON EMERALD
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án CELADON EMERALD" class='2 mr-2'>
+                <b>
+                                Dự án của S-home
+                            </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery-mau.html" title="Mẫu chung cư" class=' mr-2 cate'>
+            <b>
+              Mẫu chung cư
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-mauchungcu'>►</span>
+          <dl class="subCate subCate-mauchungcu d-none pt-1 mb-2">
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 1 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 1 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 2 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 2 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 3 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="cate.html" title="Sản phẩm" class=' mr-2 cate'>
+            <b>
+              Sản phẩm
+          </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-mauchungcu'>►</span>
+          <dl class="subCate subCate-mauchungcu d-none pt-1 mb-2">
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 1 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục bàn 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 2 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục ghế 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục tủ 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Nội thất công trình
+                </b>
+              </a>
+            </dd>            
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Nội thất bệnh viện
+                </b>
+              </a>
+            </dd>            
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Sản phẩm khác
+                </b>
+              </a>
+            </dd>  
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  (Mở thêm nếu cần)
+                </b>
+              </a>
+            </dd>   
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  (Mở thêm nếu cần)
+                </b>
+              </a>
+            </dd>        
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="news.html" title="Tin tức" class=' mr-2 cate'>
+            <b>
+              Tin tức
+            </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="https://www.youtube.com/" title="Video -channel" class=' mr-2 cate'>
+            <b>
+                        Video - channel
+                    </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="introl.html" title="Giới thiệu " class=' mr-2 cate'>
+            <b>
+                Giới thiệu 
+            </b>
+          </a>
+        </dd>
+      </dl>
+    </main>
+  </nav>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/loadVideoYoutube.js"></script>
+    <script src="js/clickVisible.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/windowScroll.js"></script>
+    <script src="js/animationOnScroll.js"></script>
+    <script src="js/OpenFullScreen.js"></script>
+</body>
+</html>

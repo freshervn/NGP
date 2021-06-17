@@ -1,0 +1,232 @@
+form{
+    &.dang-ky{
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 568px;
+        width: 100%;
+        label {
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(-35deg,var(--theme),var(--theme));
+            padding: 0.7rem 1rem;
+            .title{
+                color: white;
+                margin-bottom: 0;
+            }
+            button{
+                color: white;
+                background: transparent;
+                border: none;
+            }
+        }
+        fieldset{
+            padding: 0.5rem 1rem 2rem;
+            background: #ECECEC;            
+            display: flex;
+            flex-wrap: wrap;
+            .message{
+                font-size: 24px;
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+            [name='name'],
+            [name='email'],            
+            [name='phoneNumber'],            
+            [name='content']{
+                width: 100%;
+                margin-bottom: 0.5rem;
+                padding: 0.2em 0.5em;
+                border: 1px solid lightgray;
+            } 
+            [name='content']{
+                margin-bottom: 1em;
+            }
+            a.btn{
+                // border: 1px solid var(--theme2);
+                font-weight: bold;
+                background: rgba(0, 40, 85, .8);
+                color: white;
+                margin-left: auto;
+                &:hover{
+                    background-color: var(--theme);
+                }
+            }
+            @media (min-width:768px) {
+                padding: 0.5rem 2rem 2rem;
+                justify-content: space-between;
+                .message{
+                    font-size: 32px;
+                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                }   
+                [name='name'],
+                [name='email'],            
+                [name='phoneNumber'],            
+                [name='content']{
+                    margin-bottom: .7rem;
+                    padding: 0.5em 1em;
+                } 
+                [name='email'],            
+                [name='phoneNumber']{
+                    width: calc( 50% - 7.5px) ;
+                }
+                [name='content']{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    &.thanh-toan{
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 568px;
+        width: 100%;
+        label {
+            display: flex;
+            justify-content: space-between;
+            // background: linear-gradient(-35deg,var(--theme),var(--theme));
+            padding: 0.7rem 1rem;
+            .title{
+                color: white;
+                margin-bottom: 0;
+            }
+            button{
+                color: white;
+                background: transparent;
+                border: none;
+            }
+        }
+        fieldset{
+            padding: 0.5rem 1rem 2rem;
+            background: #ECECEC;            
+            display: flex;
+            flex-wrap: wrap;
+            .message{
+                font-size: 24px;
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+            [name='name'],
+            [name='email'],            
+            [name='phoneNumber'],            
+            [name='content']{
+                width: 100%;
+                margin-bottom: 0.5rem;
+                padding: 0.2em 0.5em;
+                border: 1px solid lightgray;
+            } 
+            [name='content']{
+                margin-bottom: 1em;
+            }
+            a.btn{
+                // border: 1px solid var(--theme2);
+                font-weight: bold;
+                background: rgba(0, 40, 85, .8);
+                color: white;
+                margin-left: auto;
+                &:hover{
+                    background-color: var(--theme);
+                }
+            }
+            @media (min-width:768px) {
+                padding: 0.5rem 2rem 2rem;
+                justify-content: space-between;
+                .message{
+                    font-size: 32px;
+                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                }   
+                [name='name'],
+                [name='email'],            
+                [name='phoneNumber'],            
+                [name='content']{
+                    margin-bottom: .7rem;
+                    padding: 0.5em 1em;
+                } 
+                [name='email'],            
+                [name='phoneNumber']{
+                    width: calc( 50% - 7.5px) ;
+                }
+                [name='content']{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+/* The Datcheckbox */
+.Datcheckbox {
+    display: block;
+    position: relative;
+    padding-left: 1.7em;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    /* Hide the browser's default checkbox */
+    input[type='checkbox'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked{
+          &[value="Đỏ"] + .checkmark {
+            background-color: red;
+            &:after {
+                display: block;
+              }
+          }
+          &[value="Xanh Lục"] + .checkmark {
+            background-color: green;
+            &:after {
+                display: block;
+              }
+          }
+          &[value="Xanh Dương"] + .checkmark {
+            background-color: blue;
+            &:after {
+                display: block;
+              }
+          }
+          &[value="Trắng"] + .checkmark {
+            background-color: white;
+            &:after {
+                display: block;
+              }
+          }
+          &[value="Xám"] + .checkmark {
+            background-color: gray;
+            &:after {
+                display: block;
+              }
+          }
+      } 
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      /* On mouse-over, add a grey background color */
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;        
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);        
+      }
+    }    
+    &:hover input[type='checkbox'] ~ .checkmark {
+      background-color: #ccc;
+    }
+} 

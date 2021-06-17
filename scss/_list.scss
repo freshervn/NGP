@@ -1,0 +1,55 @@
+.check{
+    list-style-image: url('../images//icon-check.png');    
+}
+.decimal-leading-zero{
+    counter-reset: order;
+    dt{
+        counter-increment: order;
+        .order{
+            &::before{
+                content: "0" counter(order);  
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+                font-size: 44px;
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                color: var(--theme2);
+            }
+        }
+    }   
+}
+.list-circle{
+    list-style-type:  circle;
+}
+.upper-alpha {
+    list-style-type: upper-alpha;    
+    .upper-alpha::marker{
+        font-weight: bold;
+    }
+}
+.list-disc{
+    list-style-type: disc;
+}
+.bg-nth{
+    dt,tr{
+        &:nth-child(even){
+            background: whitesmoke;
+        }
+        &:nth-child(odd){
+            background: white;
+        }
+    }
+}
+.border-right-end{
+    border-right: 1px solid lightgray;
+    &:last-child{
+        border-right: none;
+    }
+}
+.border-bot-end{
+    border-bottom: 1px solid lightgray;
+    &:last-child{
+        border-bottom: none;
+    }
+}
