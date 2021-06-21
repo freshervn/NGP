@@ -4,6 +4,12 @@
 .bg-theme2{
     background: var(--theme2) !important;
 }
+.bg-secondary{
+    background: var(--secondary) !important;
+}
+.bg-secondary2{
+    background: var(--secondary2) !important;
+}
 .bg-lightgray{
     background-color: lightgray !important;
 }
@@ -12,6 +18,9 @@
 }
 .theme2{
     color: var(--theme2) !important;
+}
+.secondary2{
+    color: var(--secondary2) !important;
 }
 .gray{
     color: gray !important;

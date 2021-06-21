@@ -230,3 +230,25 @@ form{
       background-color: #ccc;
     }
 } 
+form.search{
+    display: flex;
+    border: .5px solid #a8a8a8;
+    overflow: hidden;
+    border-radius: 1.5em;
+    input{
+        border: none;
+        padding: 0.1rem 0.3rem;
+        flex: auto;
+    }
+    a{
+        background: var(--theme);
+        height: 100%;
+        display:block;
+        font-size: 18px;
+        padding: 0.3rem 1rem;
+        color: whitesmoke;
+        i{
+            line-height: 1.6rem  !important;
+        }
+    }
+}

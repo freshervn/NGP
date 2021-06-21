@@ -1,12 +1,12 @@
 /* thiết lập chung */
-
 /*setup*/
 
 :root {
     --theme:black;
-    --theme2:#4b73b8;
+    --theme2:#4b73b8;   
     --theme-dark-mood:white;
     --secondary:#394091;
+    --secondary2:#c3d565;    
     --ultimate-gray: #939597;
     --dark-charcoal: #333;
     --color-alice: #f8f9fa;
@@ -27,7 +27,7 @@ $dark-charcoal: #333;
 $color-alice: #f8f9fa;
 @import 'color';
 @import 'text';
-@import 'shape';
+@import 'components';
 @import 'animation';
 @import 'position';
 @import 'nav';
@@ -43,7 +43,9 @@ $color-alice: #f8f9fa;
 @import 'object';
 @import 'btn';
 @import 'icon';
+@import 'size';
 @import 'bootrap';
+@import 'elements';
 @font-face{
     src: url('../Lobster/Lobster-Regular.ttf');
     font-family: "Lobster";
@@ -52,12 +54,17 @@ $color-alice: #f8f9fa;
     src: url('../Signika/Signika-VariableFont_wght.ttf');
     font-family: "Signika";
 }
+@font-face{
+    src: url('../Baloo_Tammudu_2/BalooTammudu2-Medium.ttf');
+    font-family: "Baloo_Tammudu_2";
+}
 html{
     scroll-behavior: smooth;
 }
 body {
+    background: ghostwhite;
     *{
-        font-family: "Open Sans" ;
+        font-family: "Signika" ;
     }  
     *::first-letter {
         text-transform: uppercase;
