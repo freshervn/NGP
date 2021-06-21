@@ -41,7 +41,7 @@ nav.main{
             .content{
                 display: inline-block;
                 background: white;
-                height: calc(100vh - 55px);
+                height: calc(100% - 300px);
                 overflow-y: scroll;
                 animation: slide-from-left 0.3s ease-in-out;  
                 header{
