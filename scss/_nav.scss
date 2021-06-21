@@ -41,10 +41,11 @@ nav.main{
             .content{
                 display: inline-block;
                 background: white;
-                height: calc(100% - 300px);
-                overflow-y: scroll;
+                height: calc(100% - 55px);
                 animation: slide-from-left 0.3s ease-in-out;  
                 header{
+                    position: sticky;
+                    top: 0;
                     display: flex;
                     padding: 10px;
                     background: #555;
