@@ -1,15 +1,13 @@
 nav.main{
-    position: relative;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
+    .container{
+        position: relative;     
+        display: flex;
+        justify-content: space-between;
+    }
     .logoNavbar{
-        height:34.5;
-        @media (min-width:567px) {
-            height: 50px;
-        }
-        @media (min-width:768px) {
-            height: 100px;
+        height:34.5px;   
+        @media (min-width:992px) {
+            height: 98px;
         }
     }
     aside{
@@ -66,21 +64,25 @@ nav.main{
             }
             .links{
                 list-style-type: none;
-                padding-inline: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
                 padding-top: 10px;
                 li {
                     margin-bottom: 10px;
                     border-bottom: 1px solid lightgray;
-                    a{
-                        display: block;
+                    .link{
+                        display: flex;
+                        a{
+                            display: block;
                         color:#555 ;
                         font-size: 14px;
-                    }
-                    .show-more{
-                        transform: rotate(90deg);
-                        transition: 0.3s ease-in-out;
-                        &.on{
-                            transform: rotate(-90deg);
+                        }
+                        .show-more{
+                            transform: rotate(90deg);
+                            transition: 0.3s ease-in-out;
+                            &.on{
+                                transform: rotate(-90deg);
+                            }
                         }
                     }
                     .link-subcate{
@@ -99,6 +101,93 @@ nav.main{
                 }
             }
         }
+    }    
+    @media (min-width:992px) {
+        .container{
+            padding: 0;
+        }
+        background-image: linear-gradient(180deg,ghostwhite 58%, #333 58%);
+        aside{
+            .line1{
+                padding: 10px;
+                background: ghostwhite;           
+            }
+            .line2{
+                position: inherit;
+                display: block !important;
+                height: auto;
+                .layer{
+                    display: none;
+                }
+                .content{
+                    width: 100%;
+                    height: auto;
+                    overflow: initial;
+                    background-color: transparent;
+                    header{
+                        display: none;
+                    }
+                    .links{
+                        display: flex;
+                        padding: 0;
+                        margin-bottom: 0;
+                        position: relative;
+                        li{                        
+                            border-bottom:none ;
+                            margin-bottom: 0;
+                            padding: 0;
+                            transition: 0.3s ease-in-out;
+                            position: relative;
+                            .link{
+                                display: flex;
+                                a{
+                                    color: ghostwhite;
+                                    display: block;
+                                    padding: 10px 20px;
+                                }
+                                .show-more{
+                                    filter: invert(1);
+                                    transform: rotate(0deg);
+                                    margin-right: 20px;
+                                    margin-left: -15px;
+                                }
+                            }                                       
+                            &:hover{
+                                background: var(--secondary2);
+                                .link {
+                                    a{
+                                        color: black;
+                                        text-decoration: none;
+                                    }
+                                    .show-more{
+                                        filter: initial;
+                                        transform: rotate(90deg);
+                                    }
+                                }
+                                .link-subcate{
+                                    padding: 0;
+                                    display: block !important;
+                                    position: absolute;                                    
+                                    top: 100%;
+                                    left: 0;
+                                    background: white; 
+                                    li{
+                                        padding: 0;
+                                        margin-bottom: 0;
+                                        a{
+                                            width: 300px;
+                                            display: block;
+                                            padding: 5px 10px;
+                                            text-decoration: none;
+                                        }
+                                    }                              
+                                }
+                            }
+                        }
+                    }                    
+                }
+            }
+        }
     }
 }
 form.search{
@@ -107,6 +196,12 @@ form.search{
         width: 130px;
         font-size: 14px;
         @media (min-width:375px) {
+            width: auto;
+        }
+        @media (min-width:567px) {
+            width: 110px;
+        }
+        @media (min-width:768px) {
             width: auto;
         }
     }

@@ -1100,9 +1100,8 @@
           transform: translateY(-50%);
 }
 
-nav.main {
+nav.main .container {
   position: relative;
-  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,18 +1111,12 @@ nav.main {
 }
 
 nav.main .logoNavbar {
-  height: 34.5;
+  height: 34.5px;
 }
 
-@media (min-width: 567px) {
+@media (min-width: 992px) {
   nav.main .logoNavbar {
-    height: 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  nav.main .logoNavbar {
-    height: 100px;
+    height: 98px;
   }
 }
 
@@ -1201,7 +1194,8 @@ nav.main aside .line2 .content header .Slogan {
 
 nav.main aside .line2 .links {
   list-style-type: none;
-  padding-inline: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
 }
 
@@ -1210,20 +1204,26 @@ nav.main aside .line2 .links li {
   border-bottom: 1px solid lightgray;
 }
 
-nav.main aside .line2 .links li a {
+nav.main aside .line2 .links li .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav.main aside .line2 .links li .link a {
   display: block;
   color: #555;
   font-size: 14px;
 }
 
-nav.main aside .line2 .links li .show-more {
+nav.main aside .line2 .links li .link .show-more {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-nav.main aside .line2 .links li .show-more.on {
+nav.main aside .line2 .links li .link .show-more.on {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -1244,6 +1244,102 @@ nav.main aside .line2 .links li .link-subcate li a {
   color: #666;
 }
 
+@media (min-width: 992px) {
+  nav.main {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(58%, ghostwhite), color-stop(58%, #333));
+    background-image: linear-gradient(180deg, ghostwhite 58%, #333 58%);
+  }
+  nav.main .container {
+    padding: 0;
+  }
+  nav.main aside .line1 {
+    padding: 10px;
+    background: ghostwhite;
+  }
+  nav.main aside .line2 {
+    position: inherit;
+    display: block !important;
+    height: auto;
+  }
+  nav.main aside .line2 .layer {
+    display: none;
+  }
+  nav.main aside .line2 .content {
+    width: 100%;
+    height: auto;
+    overflow: initial;
+    background-color: transparent;
+  }
+  nav.main aside .line2 .content header {
+    display: none;
+  }
+  nav.main aside .line2 .content .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  nav.main aside .line2 .content .links li {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  nav.main aside .line2 .content .links li .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav.main aside .line2 .content .links li .link a {
+    color: ghostwhite;
+    display: block;
+    padding: 10px 20px;
+  }
+  nav.main aside .line2 .content .links li .link .show-more {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-right: 20px;
+    margin-left: -15px;
+  }
+  nav.main aside .line2 .content .links li:hover {
+    background: var(--secondary2);
+  }
+  nav.main aside .line2 .content .links li:hover .link a {
+    color: black;
+    text-decoration: none;
+  }
+  nav.main aside .line2 .content .links li:hover .link .show-more {
+    -webkit-filter: initial;
+            filter: initial;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  nav.main aside .line2 .content .links li:hover .link-subcate {
+    padding: 0;
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+  }
+  nav.main aside .line2 .content .links li:hover .link-subcate li {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  nav.main aside .line2 .content .links li:hover .link-subcate li a {
+    width: 300px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+}
+
 form.search {
   border: none;
 }
@@ -1259,7 +1355,19 @@ form.search input {
   }
 }
 
-.pop-box-center, .gallery-windown, .gallery-windown .layer, .pop-box {
+@media (min-width: 567px) {
+  form.search input {
+    width: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  form.search input {
+    width: auto;
+  }
+}
+
+.pop-box-center, .pop-box, .gallery-windown, .gallery-windown .layer {
   position: fixed;
   top: 0;
   left: 0;
@@ -1292,74 +1400,6 @@ form.search input {
   left: 0;
   z-index: -1;
   background: rgba(0, 0, 0, 0.5);
-}
-
-.gallery-windown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.gallery-windown img {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.gallery-windown .layer {
-  z-index: -1;
-  background: black;
-}
-
-.gallery-windown nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-
-.gallery-windown main {
-  z-index: 0;
-}
-
-.gallery-windown main .object-fit-contain {
-  position: relative;
-  padding-top: 100vh;
-}
-
-.gallery-windown main .object-fit-contain img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.gallery-windown footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.gallery-windown footer .rectangle {
-  width: 130px;
-  border-radius: 5px;
-  border: 2px solid #e4d0d0;
-}
-
-.gallery-windown footer:hover {
-  opacity: 1;
 }
 
 .pop-box {
@@ -3288,13 +3328,13 @@ footer {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1240px;
+    max-width: 1140px;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1400px;
+    max-width: 1260px;
   }
 }
 
