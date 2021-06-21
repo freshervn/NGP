@@ -64,15 +64,35 @@ nav.main{
             }
             .links{
                 list-style-type: none;
-                padding-left: 10px;
+                padding-inline: 10px;
                 padding-top: 10px;
                 li {
                     margin-bottom: 10px;
+                    border-bottom: 1px solid lightgray;
                     a{
                         display: block;
-                        width: 100%;
                         color:#555 ;
                         font-size: 14px;
+                    }
+                    .show-more{
+                        transform: rotate(90deg);
+                        transition: 0.3s ease-in-out;
+                        &.on{
+                            transform: rotate(-90deg);
+                        }
+                    }
+                    .link-subcate{
+                        list-style-type: none;
+                        padding-left: 15px;
+                        padding-top: 5px;
+                        margin-bottom: 15px;                        
+                        li {
+                            margin-bottom: 5px;
+                            a{
+                                color: #666;
+                            }
+                            border-bottom: 1px dashed lightgray;
+                        }
                     }
                 }
             }

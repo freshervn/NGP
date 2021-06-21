@@ -1198,19 +1198,47 @@ nav.main aside .line2 .content header .Slogan {
 
 nav.main aside .line2 .links {
   list-style-type: none;
-  padding-left: 10px;
+  padding-inline: 10px;
   padding-top: 10px;
 }
 
 nav.main aside .line2 .links li {
   margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
 }
 
 nav.main aside .line2 .links li a {
   display: block;
-  width: 100%;
   color: #555;
   font-size: 14px;
+}
+
+nav.main aside .line2 .links li .show-more {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav.main aside .line2 .links li .show-more.on {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+nav.main aside .line2 .links li .link-subcate {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+
+nav.main aside .line2 .links li .link-subcate li {
+  margin-bottom: 5px;
+  border-bottom: 1px dashed lightgray;
+}
+
+nav.main aside .line2 .links li .link-subcate li a {
+  color: #666;
 }
 
 form.search {
