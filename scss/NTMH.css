@@ -1167,7 +1167,7 @@ nav.main aside .line2 .layer {
 nav.main aside .line2 .content {
   display: inline-block;
   background: white;
-  min-height: 100vh;
+  height: calc(100vh - 55px);
   -webkit-animation: slide-from-left 0.3s ease-in-out;
           animation: slide-from-left 0.3s ease-in-out;
 }
