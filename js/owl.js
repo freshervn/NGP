@@ -66,7 +66,7 @@ $(document).ready(
         })  
         $('.owl-carousel.item-1').owlCarousel({
             items:1,
-            loop:false,
+            loop:true,
             margin:0,
             nav:true,
             dots:true,    
