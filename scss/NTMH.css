@@ -2203,10 +2203,11 @@ form.search a i {
 }
 
 .contain-banner .banner blockquote .content .btn {
-  padding: 0.5;
+  padding: 0.3em 0.5em;
   background: var(--secondary2);
   color: white;
   font-size: 12px;
+  font-family: 'Signika';
 }
 
 .product {
