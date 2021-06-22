@@ -2131,16 +2131,6 @@ form.search a i {
   height: 100%;
 }
 
-.owl-carousel .owl-stage .owl-item {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
-}
-
-.owl-carousel .owl-stage .owl-item:hover {
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
-}
-
 .owl-carousel .owl-stage .owl-item.active.center {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
@@ -2185,6 +2175,12 @@ form.search a i {
   margin-bottom: 0;
 }
 
+@media (min-width: 567px) {
+  .contain-banner .banner blockquote {
+    padding: 50px;
+  }
+}
+
 .contain-banner .banner blockquote .content {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -2193,22 +2189,69 @@ form.search a i {
   color: white;
 }
 
-.contain-banner .banner blockquote .content .slogan {
-  margin-bottom: 0;
-  font-size: 18px;
+@media (min-width: 567px) {
+  .contain-banner .banner blockquote .content {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 15px;
+  }
 }
 
-.contain-banner .banner blockquote .content .slogan1 {
+.contain-banner .banner blockquote .content .slogan {
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 5vw;
+}
+
+@media (min-width: 567px) {
+  .contain-banner .banner blockquote .content .slogan {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain-banner .banner blockquote .content .slogan {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+}
+
+.contain-banner .banner blockquote .content .slogan2 {
+  margin-bottom: 15px;
+  font-size: 3vw;
+}
+
+@media (min-width: 567px) {
+  .contain-banner .banner blockquote .content .slogan2 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain-banner .banner blockquote .content .slogan2 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
 }
 
 .contain-banner .banner blockquote .content .btn {
   padding: 0.3em 0.5em;
   background: var(--secondary2);
   color: white;
-  font-size: 12px;
+  font-size: 3vw;
   font-family: 'Signika';
+}
+
+@media (min-width: 567px) {
+  .contain-banner .banner blockquote .content .btn {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contain-banner .banner blockquote .content .btn {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 .product {

@@ -222,12 +222,12 @@
 }
 .owl-carousel{
     .owl-stage{
-        .owl-item{
-            filter: brightness(90%);
-            &:hover{
-                filter: brightness(100%);
-            }
-        }
+        // .owl-item{
+        //     filter: brightness(90%);
+        //     &:hover{
+        //         filter: brightness(100%);
+        //     }
+        // }
         .owl-item.active.center{ 
             filter: brightness(100%);
             > * {
