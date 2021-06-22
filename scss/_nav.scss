@@ -94,6 +94,7 @@ nav.main{
                             margin-bottom: 5px;
                             a{
                                 color: #666;
+                                font-size: 14px;
                             }
                             border-bottom: 1px dashed lightgray;
                         }
@@ -124,6 +125,7 @@ nav.main{
                     height: auto;
                     overflow: initial;
                     background-color: transparent;
+                    display: flex;
                     header{
                         display: none;
                     }
@@ -171,6 +173,7 @@ nav.main{
                                     top: 100%;
                                     left: 0;
                                     background: white; 
+                                    z-index: 99;
                                     li{
                                         padding: 0;
                                         margin-bottom: 0;
@@ -184,7 +187,29 @@ nav.main{
                                 }
                             }
                         }
-                    }                    
+                    }    
+                    .social{
+                        margin-left: auto;
+                        padding-left: 0;
+                        list-style-type: none;
+                        display: flex;
+                        margin-bottom: 0;
+                        li{
+                            display: inline-block;
+                            margin: auto;
+                            a{           
+                                display: inline-block;  
+                                padding: 10px;                                                   
+                                filter: grayscale(100%);
+                                img{
+                                    height: 21px;
+                                }
+                                &:hover{
+                                    filter:none ;
+                                }
+                            }
+                        }
+                    }                
                 }
             }
         }
@@ -192,9 +217,16 @@ nav.main{
 }
 form.search{
     border: none;
+    @media (min-width:768px) {
+        margin-left: auto;
+        margin: 15px;
+    }
     input{
         width: 130px;
         font-size: 14px;
+        &:focus{
+            box-shadow: 0.5em 0.3em 0.3em inset var(--secondary2),  0 -0.3em 0.3em inset var(--secondary2), ;
+        }
         @media (min-width:375px) {
             width: auto;
         }
@@ -203,6 +235,7 @@ form.search{
         }
         @media (min-width:768px) {
             width: auto;
+            outline: none;
         }
-    }
+    }    
 }
