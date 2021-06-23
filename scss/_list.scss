@@ -32,14 +32,15 @@
     list-style-type: disc;
 }
 .bg-nth{
-    dt,tr{
+    dt,tr,li{
         &:nth-child(even){
-            background: whitesmoke;
+            background: #f2f2f2;
         }
         &:nth-child(odd){
-            background: white;
+            background: #d7d7d7;
         }
     }
+    list-style-position:inside;
 }
 .border-right-end{
     border-right: 1px solid lightgray;
@@ -52,4 +53,13 @@
     &:last-child{
         border-bottom: none;
     }
+}
+.counter{
+    counter-reset: order;
+    .number{
+        counter-increment: order;        
+        &::before{
+            content:'0' counter(order);              
+        }        
+    }   
 }

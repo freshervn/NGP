@@ -1,5 +1,11 @@
 nav.main{
     z-index: var(--navIndex);
+    position: sticky;
+    top: 0;
+    transition:0.3s ease-in-out;
+    @media (min-width:992px) {    
+        transition: 1s ease-in-out;
+    }
     .container{
         position: relative;     
         display: flex;
@@ -116,7 +122,7 @@ nav.main{
         aside{
             .line1{
                 padding: 10px;
-                background: ghostwhite;           
+                background: ghostwhite;                           
             }
             .line2{
                 position: inherit;

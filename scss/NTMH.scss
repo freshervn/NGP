@@ -6,7 +6,8 @@
     --theme2:#4b73b8;   
     --theme-dark-mood:white;
     --secondary:#394091;
-    --secondary2:#c3d565;    
+    --secondary2:#c3d565;   
+    --hightlight:#e21f1b; 
     --ultimate-gray: #939597;
     --dark-charcoal: #333;
     --color-alice: #f8f9fa;
@@ -47,6 +48,9 @@ $color-alice: #f8f9fa;
 @import 'bootrap';
 @import 'elements';
 @import 'Stickymobie';
+@import 'intro';
+@import 'quality';
+@import 'systerm';
 @font-face{
     src: url('../Lobster/Lobster-Regular.ttf');
     font-family: "Lobster";
@@ -70,4 +74,5 @@ body {
     *::first-letter {
         text-transform: uppercase;
     }
+    padding-bottom: 600px;
 }

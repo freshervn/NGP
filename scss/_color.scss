@@ -19,8 +19,14 @@
 .theme2{
     color: var(--theme2) !important;
 }
+.secondary{
+    color: var(--secondary) !important;
+}
 .secondary2{
     color: var(--secondary2) !important;
+}
+.hightlight{
+    color: var(--hightlight);
 }
 .gray{
     color: gray !important;
@@ -122,18 +128,10 @@
 .border-theme2{
     border: 1px solid var(--theme2);
 }
-.underline-dashed{
-    border-bottom: 1px dashed ;
+.border-secondary2{
+    border: 1px solid var(--secondary2);
 }
-.underline{
-    border-bottom: 1px solid ;
-}
-.underline-theme{
-    border-bottom: 1px solid var(--theme);
-}
-.underline-bold{
-    border-bottom: 2px solid var(--theme);
-}
+
 .shadow{
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }

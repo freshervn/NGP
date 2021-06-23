@@ -1,0 +1,35 @@
+.quality{
+    .quality1{
+        background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url('../images/img.png');
+        background-size: 100% 100%, auto 100%;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @media (min-width:992px) {            
+            padding-left: 50px ;                                                
+            padding-right: 50px ;
+            padding-top: 50px ;
+            .content{
+                border-left: 2px solid var(--secondary2);
+                padding-left: 30px;
+            }
+        }
+        .title{
+            font-size: 24px;
+        }
+        .decription{
+            text-align: justify;
+        }
+        .btn{
+            color:white;
+        }
+    }
+    .quality2{
+        background-image: url('../images/img.jpg');
+        background-size: 100% auto;               
+        height: auto;
+        img{
+            opacity: 0;
+        }
+    }
+}

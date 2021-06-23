@@ -1,0 +1,38 @@
+.systerm{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0,0.15);
+    // padding-bottom: 15px;
+    figure{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .number{
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+            width: 100%;
+            display: block;
+            // background-color: rgba(255,255,255,.8);   
+            background-color: rgba(0,0,0,.6);
+            text-align: center;         
+            &::before{
+                color: var(--secondary2);
+                font-size: 32px;
+                @media (min-width:992px) {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+    blockquote{
+        padding-inline: 15px;
+        padding-bottom: 15px;
+        .title{
+            font-size: 18px;
+            margin-bottom: 0.3em;
+        }
+        .decription{
+            margin-bottom: 0;
+        }
+    }
+}

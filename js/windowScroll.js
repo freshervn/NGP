@@ -34,10 +34,11 @@ function hidenNavbarMB(){
     var currentScrollPos = window.pageYOffset;         
     if (preScrollpos > currentScrollPos){
     // console.log('run');
-    $('nav.navBar').css('top','0');        
+    $('nav.main').css({'top':'0','background':'white'});      
+    $('nav.main').addClass('shadow');  
     }
     else{
-        $('nav.navBar').css('top','-' + $('nav.navBar header').outerHeight());        
+        $('nav.main').css({'top':'-100%'});        
     }
     preScrollpos = currentScrollPos;
 }
@@ -45,10 +46,10 @@ function hidenNavbarDT(){
     var currentScrollPos = window.pageYOffset;         
     if (preScrollpos > currentScrollPos){
     // console.log('run');
-    $('nav.navBar').css('top','-' + $('nav.navBar main').outerHeight());        
+    $('nav.main').css('top','0');        
     }
     else{
-        $('nav.navBar').css('top','-' + $('nav.navBar header').outerHeight() + $('nav.navBar main').outerHeight());        
+        $('nav.main').css('top','-100%');        
     }
     preScrollpos = currentScrollPos;
 }

@@ -364,3 +364,23 @@
 .btn-outline-secondary{
     border-color: var(--secondary2);
 }
+.btn-hv{
+    transition: 0.3s ease-in-out;
+    &:hover{
+        position: relative;
+        transform: translateY(-3%);
+        box-shadow: 0 0.5em 0.3em  black;
+        &::after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: dropwater 1.2s ;
+            animation-iteration-count: 1;
+            content: "";
+            left: 0%;
+            top: 0%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 5px var(--secondary2);
+        }    
+    }
+}
