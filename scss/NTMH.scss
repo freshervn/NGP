@@ -74,5 +74,8 @@ body {
     *::first-letter {
         text-transform: uppercase;
     }
-    padding-bottom: 600px;
+    padding-bottom: 60px;
+    @media (min-width:768px) {
+        padding-bottom: 0;
+    }
 }
