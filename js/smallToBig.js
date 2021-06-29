@@ -1,5 +1,10 @@
-$('.small-to-big-window .smallWindown ').click(
-    function () {
-        var item = $(this).clone();
-        $('.small-to-big-window  .bigWindown').html(item);
-});
+$(document).ready(
+    function(){
+        $('.small-to-big-window .smallWindown ').click(
+            function () {
+                var item = $(this).clone();
+                $('.small-to-big-window  .bigWindown').html(item);
+            }
+        );
+    }
+)

@@ -1,11 +1,48 @@
-@keyframes slide-from-left{
+// animation name
+// flyLeft
+// flyRight
+// flyup
+// zoomOut
+@keyframes Flip{
     0%{
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    10%{
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+@keyframes flyLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    10%{
         opacity: 0;
         transform: translateX(-100%);
     }
     to{
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(0);
+    }
+}
+@keyframes flyRight{
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    10%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 @keyframes flyup{
@@ -92,6 +129,22 @@
         opacity: 0;
     }
 }
+
+@keyframes dropwater-mid {
+    0% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+    25% {
+        transform: translate(-50%,-50%) scale(1.1);
+    }
+    50% {
+        transform: translate(-50%,-50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(1.3);
+        opacity: 0;
+    }
+}
 @keyframes flyZoomOut{
     from{
         transform: translateY(3px);
@@ -130,6 +183,22 @@
         top: 0%;
         box-shadow: 0 0 10px 5px#dc3545;
     }    
+
+}
+%apper{
+    position: relative;
+    &::after{
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        border-radius: 50%;
+        animation: dropwater-mid 1.2s forwards;
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 0 10px 5px var(--secondary);
+    }    
 }
 .animation-shadow{
     position: relative;
@@ -149,6 +218,7 @@
     &:hover{
         transform: scale(1.1);
         box-shadow: 0 0 1px 3px var(--theme2);
+        z-index: 99;
     }
 }
 .hv-zoom-qclv{
@@ -286,10 +356,62 @@
         transform: translate(1px, 0px) rotate(-1deg);
     }
 }
-.hv-wave{
+.hv-wave,%hv-wave{
     &:hover{
         animation-name: wave;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+    }
+}
+%wave{
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+%hover15 {
+    figure {
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,.2);
+            border-radius: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+        &:hover::before {
+            -webkit-animation: circle .75s;
+            animation: circle .75s;
+        }
+    }
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+.hv-dark{
+    &:hover{
+        *{
+            filter: brightness(70%);
+        }
+        // img{
+        //     filter: brightness(100%) !important;
+        // }    
     }
 }

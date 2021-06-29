@@ -66,8 +66,8 @@ function isElementInViewport(el) {
 }
 function animetionOnScroll(){       
     $('[animationOnScroll]').each(
-        function(){
-            if (isElementInViewport($(this))) {
+        function(){                        
+            if (isElementInViewport($(this))) {                   
             $animationname = $(this).attr("animationOnScroll");              
             $(this).css({
                 'animation-play-state': 'running'
@@ -75,6 +75,14 @@ function animetionOnScroll(){
             }
         }
     );            
+    $('[animationOnScrollCounter="ready"]').each(
+        function(){                        
+            if (isElementInViewport($(this))) {                   
+            animatecounter();
+            $(this).attr('animationOnScrollCounter','done');
+            }
+        }
+    );                
 }
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

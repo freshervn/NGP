@@ -1,6 +1,5 @@
 /* thiết lập chung */
 /*setup*/
-
 :root {
     --theme:black;
     --theme2:#4b73b8;   
@@ -28,6 +27,7 @@ $dark-charcoal: #333;
 $color-alice: #f8f9fa;
 @import 'color';
 @import 'text';
+@import 'bootrap';
 @import 'components';
 @import 'animation';
 @import 'position';
@@ -45,12 +45,14 @@ $color-alice: #f8f9fa;
 @import 'btn';
 @import 'icon';
 @import 'size';
-@import 'bootrap';
 @import 'elements';
 @import 'Stickymobie';
 @import 'intro';
 @import 'quality';
 @import 'systerm';
+@import 'counterpart';
+@import 'bao-chi';
+@import 'videoyoutube';
 @font-face{
     src: url('../Lobster/Lobster-Regular.ttf');
     font-family: "Lobster";
@@ -60,8 +62,8 @@ $color-alice: #f8f9fa;
     font-family: "Signika";
 }
 @font-face{
-    src: url('../Baloo_Tammudu_2/BalooTammudu2-Medium.ttf');
-    font-family: "Baloo_Tammudu_2";
+    src: url('../Tinos/Tinos-Regular.ttf');
+    font-family: "Tinos";
 }
 html{
     scroll-behavior: smooth;

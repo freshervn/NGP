@@ -9,14 +9,16 @@
 }
 .NPG-product{
     @extend %box-shadow;
-    border: 1px solid lightgray;
+    border: 1px solid lightgray;    
+    transition: 0.3s ease-in-out;
     figure{
         padding-top: 100%;
         position: relative;
         width: 100%;
-        border-bottom: 1px solid whitesmoke;
+        border-bottom: 1px solid lightgrey;
         margin-bottom: 0.5em;
         img{
+            transition: 0.3s ease-in-out;
             width: 100%;
             @extend %middle;
             object-fit: contain;
@@ -24,24 +26,78 @@
                 width: 90%;
             }
         }
-    }
+    }        
     blockquote{
         padding: 5px;
+        margin-bottom: 5px;
         .name{
             text-align: center;
             font-size: 18px;            
+            margin-bottom: 0.25em;
+            @media (min-width:992px) {
+                border-bottom: 1px solid lightgray;
+            }
         }
         .price-cart{
+            @media (min-width:992px) {
+                padding-top: 5px;
+            }
             display: flex;
             justify-content: space-between;
+            .price{
+                margin-bottom: 0;
+                color: #D9001B;
+                @media (min-width:992px) {
+                    margin: auto;
+                }
+            }
+            .cart{
+                display: block;                
+                @include my(auto);
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                &.on{
+                  background-color: var(--theme2);  
+                  @extend %apper;
+                  img{
+                    filter: invert(1);
+                  }
+                }
+                img{
+                    @media (min-width:992px) {
+                        height: 1.5em;
+                    }
+                }
+                &:hover{
+                    background: var(--secondary);
+                    img{
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        @extend %hover15 ;
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+        box-shadow:0 0.5rem 1rem var(--secondary2);
+        blockquote{
+            .price-cart{
+                .cart{
+                    img{
+                        @extend %wave;                
+                    }
+                }
+            }
         }
     }
 }
-%square{
-    padding-top: 100%;
-    position: relative;
-    width: 100%;
-}
+
 // .product{    
 //     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .15);
 //     border: 1px solid lightgray;    

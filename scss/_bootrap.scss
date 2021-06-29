@@ -33,4 +33,21 @@
         }
     }
 }
-// box-shadow: 0 0.5rem 1rem rgba(0, 0, 0,0.15);
+%box-shadow{
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0,0.15);
+} 
+%middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+%square{
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+@mixin my($height) {
+    margin-top: $height;
+    margin-bottom: $height;
+}

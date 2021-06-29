@@ -311,3 +311,53 @@
         }
     }
 }
+.btn-back.owl-carousel{
+    .owl-nav {
+        position: relative;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s ease-in-out;
+        /*button nav*/
+        button {
+            display: block;
+            border-radius: 5px;
+            outline: none;
+            width: auto;
+            height: auto;
+            background: transparent;
+            position: absolute;
+            &.owl-prev {
+                bottom: -1.5em;
+                border: 1px solid var(--secondary2);
+                left: 48%;
+                transform: translateX(-100%);
+            }
+            &.owl-next {
+                bottom: -1.5em;
+                border: 1px solid var(--secondary2);
+                right: 48%;
+                transform: translateX(100%);
+            }
+            /*span*/
+            span {
+                text-align: center;
+                font-weight: thin;
+                color: var(--secondary2);
+                font-size: 16px;
+                border: 1px solid var(--secondary2);
+                display: flex;
+                padding: 0.1em 0.5em;
+                * {
+                    margin: auto;
+                }
+            }
+            &:hover {
+                background: var(--secondary2);
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+}
