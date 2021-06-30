@@ -244,6 +244,11 @@
         background: rgba(0,0,0,.9) !important;
     }
 }
+.hv-bg-them{
+    &:hover{
+        background:var(--secondary2);
+    }
+}
 .hv-bold{
     transition: 0.3s ease-in-out;
     &:hover{
@@ -413,5 +418,12 @@
         // img{
         //     filter: brightness(100%) !important;
         // }    
+    }
+}
+.hv-bright{
+    &:hover{
+        *{
+            filter: brightness(130%);
+        }
     }
 }

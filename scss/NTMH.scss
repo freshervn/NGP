@@ -53,6 +53,8 @@ $color-alice: #f8f9fa;
 @import 'counterpart';
 @import 'bao-chi';
 @import 'videoyoutube';
+@import 'gioi-thieu-ve-ngp';
+@import 'tuyendung';
 @font-face{
     src: url('../Lobster/Lobster-Regular.ttf');
     font-family: "Lobster";
@@ -79,5 +81,33 @@ body {
     padding-bottom: 60px;
     @media (min-width:768px) {
         padding-bottom: 0;
+    }    
+}
+.translate-top{
+    margin-top: -100px !important;
+}
+.btn-primary{
+    padding: 0.3em 0.5em;
+    background: var(--secondary2);
+    color: white;
+    font-family: 'Signika';
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        position: relative;
+        transform: translateY(-3px);
+        box-shadow: 0 1em 0.5em  black;
+        &::after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: dropwater 1.2s ;
+            animation-iteration-count: 1;
+            content: "";
+            left: 0%;
+            top: 0%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 5px var(--secondary2);
+        }    
     }
 }

@@ -34,10 +34,10 @@
 .bg-nth{
     dt,tr,li{
         &:nth-child(even){
-            background: #f2f2f2;
+            background: #d7d7d7;
         }
         &:nth-child(odd){
-            background: #d7d7d7;
+            background: #f2f2f2;
         }
     }
     list-style-position:inside;

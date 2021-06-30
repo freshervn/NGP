@@ -62,6 +62,9 @@
         font-size: 16px !important;
     }
 }
+.size-18{
+    font-size: 18px !important;    
+}
 .size-18-14{
     font-size: 14px !important;
     @media (min-width:768px) {
@@ -94,6 +97,9 @@
 }
 .size-26{
     font-size: 26px !important;
+}
+.size-32{
+    font-size: 32px !important;
 }
 .size-32-24{
     font-size: 24px !important;
@@ -185,12 +191,6 @@
 .font-time{
     font-family: 'Times New Roman', Times, serif !important;
 }
-.C45{
-    width: calc(100% - 30px);
-    @media (min-width:768px) {        
-        width: 22.5em !important;
-    }
-}
 .nowrap{
     word-break: keep-all !important;
     white-space: nowrap;
@@ -211,6 +211,20 @@
         left: 0;
         height: 2px;
         width: 100%;
+        background: var(--secondary2);
+    }
+}
+.underline-70{
+    position: relative;
+    display: inline-block;
+    &::after{
+        position: absolute;
+        content:'';
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 70%;
         background: var(--secondary2);
     }
 }
